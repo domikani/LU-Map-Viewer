@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/style.e308ff8e.css">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+    <title>LU Map Viewer</title>
+
+<script src="/style.e308ff8e.js"></script><script src="/about.js"></script><link rel="stylesheet" href="/new.e31bb0bc.css"></head>
+<body>
+<div class="header">
+
+    <div class="header-right">
+        <a href="/about.html">About</a>
+        <a href="https://openlayers.org/">Open Layers</a>
+        <a href="http://geoserver.org/">GeoServer</a>
+        <a href="#licence">License</a>
+</div>
+</div>
+<div class="row">
+    <div class="column">
+        <div id="map" class="map"></div>
+
+        <br>
+        <text><i class="arrow right"></i>  Use<strong> Alt+Shift+Drag </strong> to rotate the map.</text>
+        <br>
+        <text><i class="arrow right"></i>  Use the <strong>E(xtent) </strong>icon to zoom in Lund Municipality.</text>
+        <br>
+
+        <text id="mouse-position"><i class="arrow right"></i> Put the cursor anywhere in the map to reveal the coordinates (EPSG:3857):</text>
+
+
+    </div>
+    <div class="column">
+        <text id="title">Lund Municipality Map Viewer</text>
+        <br>
+        <div class="slider">
+            <span class="slider-label">Swipe to change the basemap</span>
+
+            <input id="slider" class="slider-input" type="range" min="0" max="100" value="100">
+            <span id="slideroutput" class="slider-value">100</span>
+        </div>
+        <div id="layertree">
+            <br>
+            <text>Click on layer nodes below to change their properties.</text>
+            <ul>
+                <li><span>Layer group</span>
+                    <fieldset id="layer2">
+                        <label class="checkbox" for="visible1">
+                            <input id="visible1" class="visible" type="checkbox">visibility
+                        </label>
+                        <label>opacity</label>
+                        <input class="opacity" type="range" min="0" max="1" step="0.01">
+                    </fieldset>
+                    <ul>
+                        <li><span>Roads</span>
+                            <fieldset id="layer20">
+                                <label class="checkbox" for="visible20">
+                                    <input id="visible20" class="visible" type="checkbox">visibility
+                                </label>
+                                <label>opacity</label>
+                                <input class="opacity" type="range" min="0" max="1" step="0.01">
+                            </fieldset>
+                        </li>
+                        <li><span>Railroads</span>
+                            <fieldset id="layer21">
+                                <label class="checkbox" for="visible21">
+                                    <input id="visible21" class="visible" type="checkbox">visibility
+                                </label>
+                                <label>opacity</label>
+                                <input class="opacity" type="range" min="0" max="1" step="0.01">
+                            </fieldset>
+                        </li>
+                        <li><span>Farm/Agriculture buildings</span>
+                            <fieldset id="layer22">
+                                <label class="checkbox" for="visible22">
+                                    <input id="visible22" class="visible" type="checkbox">visibility
+                                </label>
+                                <label>opacity</label>
+                                <input class="opacity" type="range" min="0" max="1" step="0.01">
+                            </fieldset>
+                        </li>
+                        <li><span> Public buildings</span>
+                            <fieldset id="layer23">
+                                <label class="checkbox" for="visible23">
+                                    <input id="visible23" class="visible" type="checkbox">visibility
+                                </label>
+                                <label>opacity</label>
+                                <input class="opacity" type="range" min="0" max="1" step="0.01">
+                            </fieldset>
+                        </li>
+                        <li><span> Other/Remaining buildings</span>
+                            <fieldset id="layer24">
+                                <label class="checkbox" for="visible24">
+                                    <input id="visible24" class="visible" type="checkbox">visibility
+                                </label>
+                                <label>opacity</label>
+                                <input class="opacity" type="range" min="0" max="1" step="0.01">
+                            </fieldset>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <text>Draw features on the map!</text>
+        <form class="form-inline">
+            <label>Choose the future's geometry type of your preference from the dropdown menu.</label><br>
+            <select id="type">
+                <option value="None">None</option>
+                <option value="LineString">LineString</option>
+                <option value="Polygon">Polygon</option>
+                <option value="Circle">Circle</option>
+                <option value="Point">Point</option>
+            </select>
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<script src="/new.e31bb0bc.js"></script>
+
+
+<footer>
+    <a href="https://www.lunduniversity.lu.se/" class="logo">
+        <img src="https://coursera-university-assets.s3.amazonaws.com/60/1150d0e0ca11e3a2dce3847b2017f0/LU_square_logo_180x180.png"></a>
+    <p>LU map Viewer © Domna Kanari,Lund University 2020 All rights reserved. </p>
+
+</footer>
+
+</body>
+</html>
