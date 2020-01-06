@@ -7,6 +7,13 @@ html {
     text-align: justify;
     width: 100%;
 }
+
+.ol-rotate {
+    top: .5em;
+    right: 40px;
+    transition: opacity .25s linear, visibility 0s linear;
+}
+
 body{
     margin: 0px;
 
