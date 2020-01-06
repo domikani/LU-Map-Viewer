@@ -13,8 +13,10 @@ Please note my server does not run continuously.
 
 #Author:
 Domna Kanari
+
 #License:
 LICENCE.md
+
 #Credits:
 Organisations:Lund University,OpenLayers,GeoServer,GitHub,StackOverFlow
 Web GIS course Professors: Weiming Huang and Ali Mansourian
