@@ -7,7 +7,7 @@ and Lund Municipality.
 #Geoserver, OpenLayers and node.js information:
 In order to produce this application I used the developers production mode from OpenLayers.This mode uses node.js to develop 
 an OpenLayers app in localhost:1234.More information about building an OpenLayers App can be found 
-here https://openlayers.org/en/latest/doc/tutorials/bundle.html.To produce the geographical data from Lund Municipality in the application
+here https://openlayers.org/en/latest/doc/tutorials/bundle.html .To produce the geographical data from Lund Municipality in the application
 I used GeoServer.
 Please note my server does not run continuously.
 
